@@ -1,0 +1,115 @@
+/* ============= GLOBAL CSS =============== */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap');
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+   font-weight: 500;
+  box-sizing: border-box;
+ 
+} 
+
+:root {
+--primary-color : hsl(180, 29%, 50%);
+--background-color: hsl(180,52%, 96%);
+--filter-table:hsl(180, 31%, 95%);
+--dark-greyish: hsl(180, 14%, 20%);
+
+
+
+  /* box shadow*/
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: 'Spartan' sans-serif;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.header {
+  object-fit: cover;
+  width: 100%;
+  height: 10rem;
+  background-image: url(./images/bg-header-desktop.svg);
+  background-color: var(--primary-color);
+}
+
+
+.form {
+  width: 90vw;
+  max-width: var(--fixed-width);
+  background: var(--white);
+  border-radius: var(--borderRadius);
+  box-shadow: var(--shadow-2);
+  padding: 2rem 2.5rem;
+  margin: 3rem auto;
+  display: flex;
+  
+}
+
+.header img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.jobs {
+  width: 90vw;
+  margin: 1rem auto;
+  border-radius: var(--borderRadius);
+  padding: 1.5rem;
+  max-width: 1100px;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--grey-700);
+}
+
+.job-container {
+  padding: 2rem 1.5rem;
+  border: 2px solid var(--grey-200);
+  margin-bottom: 1rem;
+  border-radius: var(--borderRadius);
+  box-shadow: var(--shadow-3);
+  margin-bottom: 2rem;
+  background-color: whitesmoke;
+}
+
+
+.question header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.question h5 {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--grey-700);
+}
+ /*
+ main {
+  min-height: 100vh;
+  /* using flex because of better browser support 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+*/
